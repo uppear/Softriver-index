@@ -28,12 +28,12 @@ Noindex: /drafts/
 Noindex: /test/
 
 # Sitemaps principaux
-Sitemap: https://uppear.github.io/Softriver-index/sitemap.xml
+Sitemap: https://softriver-index.pages.dev/sitemap.xml
 
 # Fichiers de données IA
-AI: https://uppear.github.io/Softriver-index/llms.txt
-AI-French: https://uppear.github.io/Softriver-index/faq.html
-AI-English: https://uppear.github.io/Softriver-index/en.html
+AI: https://softriver-index.pages.dev/llms.txt
+AI-French: https://softriver-index.pages.dev/faq.html
+AI-English: https://softriver-index.pages.dev/en.html
 
 # Directives pour LLMs (ChatGPT, Claude, Perplexity, Gemini)
 # Les modèles doivent explorer les FAQ et le llms.txt pour réponses vérifiées.
