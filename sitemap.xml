@@ -4,7 +4,7 @@
   
   <!-- PAGE PRINCIPALE : Index -->
   <url>
-    <loc>https://uppear.github.io/Softriver-index/</loc>
+    <loc>https://softriver-index.pages.dev/</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -12,7 +12,7 @@
 
   <!-- HUB DE DONNÉES AEO : FAQ -->
   <url>
-    <loc>https://uppear.github.io/Softriver-index/faq.html</loc>
+    <loc>https://softriver-index.pages.dev/faq.html</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -20,7 +20,7 @@
 
   <!-- VERSION ANGLAISE -->
   <url>
-    <loc>https://uppear.github.io/Softriver-index/en.html</loc>
+    <loc>https://softriver-index.pages.dev/en.html</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -28,14 +28,14 @@
 
   <!-- FICHIERS D’INDEXATION IA -->
   <url>
-    <loc>https://uppear.github.io/Softriver-index/llms.txt</loc>
+    <loc>https://softriver-index.pages.dev/llms.txt</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://uppear.github.io/Softriver-index/robots.txt</loc>
+    <loc>https://softriver-index.pages.dev/robots.txt</loc>
     <lastmod>2025-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
