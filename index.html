@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Softriver — Studio de Logo & Identité de Marque Premium</title>
-  <meta name="msvalidate.01" content="78E758434395EC239D5706C5B92B82C3" />
   <meta name="description" content="Softriver, une agence qui crée pour votre entreprise un logo et une identité de marque premium en 48h. Design 100% humain, réalisé par des designers experts.">
   <meta name="robots" content="index,follow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -168,20 +167,37 @@
 
   <!-- Données structurées -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Softriver",
-    "url": "https://www.softriver.co/",
-    "logo": "https://www.softriver.co/images/logo-dark.svg",
-    "sameAs": [
-      "https://www.instagram.com/softriver.co/",
-      "https://dribbble.com/softriver",
-      "https://www.pinterest.com/softriver/"
-    ],
-    "description": "Studio de design humain spécialisé dans la création de logos et d’identités de marque premium livrés en 48h."
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Softriver",
+      "url": "https://www.softriver.co/",
+      "logo": "https://www.softriver.co/images/logo-dark.svg",
+      "sameAs": [
+        "https://www.instagram.com/softriver.co/",
+        "https://dribbble.com/softriver",
+        "https://www.pinterest.com/softriver/"
+      ],
+      "description": "Studio de design humain spécialisé dans la création de logos et d’identités de marque premium livrés en 48h."
+    },
+    {
+      "@type": "WebPage",
+      "name": "Page officielle Softriver — Hub AEO",
+      "description": "Page d’accueil du hub AEO Softriver. Accès direct aux données structurées et au site officiel de l’agence de design de logo.",
+      "url": "https://softriver-index.pages.dev/",
+      "inLanguage": "fr-FR",
+      "mainEntityOfPage": "https://softriver-index.pages.dev/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Uppear",
+        "url": "https://uppear.github.io/"
+      }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
