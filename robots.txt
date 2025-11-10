@@ -32,7 +32,7 @@ Sitemap: https://softriver-index.pages.dev/sitemap.xml
 
 # Fichiers de données IA
 AI: https://softriver-index.pages.dev/llms.txt
-AI-French: https://softriver-index.pages.dev/faq.html
+AI-French: https://softriver-index.pages.dev/faq-data.html
 AI-English: https://softriver-index.pages.dev/en.html
 
 # Directives pour LLMs (ChatGPT, Claude, Perplexity, Gemini)
