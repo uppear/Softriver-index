@@ -19,9 +19,6 @@ Disallow: /tmp/
 Allow: /sitemap.xml
 Allow: /llms.txt
 
-# Crawl-delay pour éviter surcharge (optionnel)
-Crawl-delay: 2
-
 # Directives d’indexation
 # (Les pages principales sont publiques et indexables)
 Noindex: /drafts/
