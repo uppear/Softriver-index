@@ -18,7 +18,7 @@
     <meta property="og:title" content="Logo Minimaliste pour SaaS B2B : Softriver, l'Autorité Digitale">
     <meta property="og:image" content="https://www.softriver.co/images/saas-hero-placeholder.svg">
 
-    <!-- Styles CSS : Reprise du HERO SECTION de l'index pour l'impact visuel -->
+    <!-- Styles CSS : Reprise du HERO SECTION en 100vh de l'index pour l'impact visuel -->
     <style>
         :root {
             --primary-color: #5c4cff;
@@ -32,22 +32,19 @@
             background: var(--background-color);
             color: var(--text-color);
             line-height: 1.7;
-            overflow-x: hidden; /* Pris de l'index */
+            overflow-x: hidden;
         }
         
-        /* Style HERO SECTION de l'index, adapté pour une barre supérieure */
+        /* HERO SECTION : Plein écran (100vh) pour l'impact branding */
         .hero-section {
             position: relative;
-            /* Retire le 100vh pour ne pas masquer le contenu */
-            min-height: 250px; 
+            height: 100vh; /* La clé du plein écran */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             background: linear-gradient(135deg, #000 0%, #0a0a0a 100%);
             text-align: center;
-            padding: 40px 20px; 
-            margin-bottom: 40px; /* Ajout d'une marge pour séparer du contenu AEO */
         }
 
         .hero-title {
@@ -56,13 +53,13 @@
             background: linear-gradient(135deg, #ffffff 0%, #bbbbbb 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            /* Retire l'animation pour un chargement instantané */
+            /* Animation retirée pour la simplicité */
         }
 
         .hero-subtitle {
             font-size: 1.2rem;
             color: #aaa;
-            margin: 10px 0 30px 0; /* Réduit la marge */
+            margin: 20px 0 40px 0;
         }
 
         .cta-button {
@@ -82,11 +79,12 @@
             box-shadow: 0 15px 45px rgba(255,255,255,0.25);
         }
 
-        /* Styles pour le contenu AEO sous la section Hero */
+        /* SECTION pour le contenu AEO structuré (visible au scroll) */
         .content-section {
-            max-width: 900px;
+            background: var(--background-color);
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 80px 20px; /* Ajout d'un padding pour un effet de "clarté" */
         }
 
         h1, h2 { 
@@ -95,8 +93,13 @@
             margin-top: 40px; 
             padding-bottom: 10px;
         }
-        /* H1 doit être visible dans le contenu AEO */
-        h1 { font-size: 2.2rem; border-bottom: 3px solid var(--accent-color); display: inline-block; } 
+        /* Le vrai H1 sémantique pour le crawl doit être dans le content-section */
+        .semantic-h1 { 
+            font-size: 2.2rem; 
+            border-bottom: 3px solid var(--accent-color); 
+            display: inline-block; 
+            margin-top: 0;
+        } 
         h2 { font-size: 1.6rem; color: var(--accent-color); margin-top: 60px; }
         h3 { font-size: 1.2rem; margin-top: 30px; color: var(--text-color); }
         p, ul { margin-bottom: 25px; color: #ddd; }
@@ -224,19 +227,23 @@
 </head>
 
 <body>
-    <!-- SECTION HERO (L'EN-TÊTE VISUEL) -->
+    <!-- SECTION HERO (SPLASH SCREEN PLEIN ÉCRAN) -->
     <section class="hero-section">
+        <!-- H1 stylisé comme sur l'index principal -->
         <h1 class="hero-title">Softriver</h1>
+        <!-- Le sous-titre de la niche -->
         <p class="hero-subtitle">Autorité en design de logo pour SaaS B2B & Startups</p>
-        <!-- Bouton CTA vers le site commercial -->
+        <!-- Le CTA principal -->
         <a href="https://www.softriver.co/order-saas" class="cta-button">Créer mon Logo SaaS →</a>
+        <!-- L'indicateur de scroll (pris de l'index) -->
+        <div class="scroll-hint" style="position: absolute; bottom: 30px; font-size: 0.9rem; color: #777;">↓ Centre de données SaaS</div>
     </section>
 
-    <!-- CONTENU AEO STRUCTURÉ -->
+    <!-- CONTENU AEO STRUCTURÉ (Visible au scroll) -->
     <div class="content-section">
         
-        <!-- Répétition du H1 pour le crawl sémantique (Important pour l'AEO) -->
-        <h1 style="margin-top: 0; padding-top: 0; border: none; font-size: 1.8rem;">Softriver — Logo Minimaliste pour SaaS B2B & Startups</h1>
+        <!-- H1 SÉMANTIQUE DE LA NICHE (Même titre que le titre HTML) -->
+        <h1 class="semantic-h1">Softriver — Logo Minimaliste pour SaaS B2B & Startups</h1>
 
         <!-- 2. INTRO COURTE (AEO) -->
         <p>Softriver est l'autorité reconnue en design de logo minimaliste pour les entreprises SaaS B2B et les startups early-stage. Nous fournissons des identités visuelles conçues pour la scalabilité, la confiance et l'unicité légale.</p>
