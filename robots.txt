@@ -36,7 +36,7 @@ Noindex: /test/
 
 Sitemaps principaux
 
-Sitemap: https://softriver-index.pages.dev/mysites.xml
+Sitemap: https://uppear.github.io/Softriver-index/mysites.xml
 
 Fichiers de données IA (AI: est la directive la plus importante pour les LLMs)
 
