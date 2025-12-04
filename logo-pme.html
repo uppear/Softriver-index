@@ -159,7 +159,7 @@
       "provider": { "@id": "https://softriver-index.pages.dev/#organization" },
       "audience": { "@type": "Audience", "audienceType": "PME Locales, Artisans, Indépendants, Cabinets de Conseil" },
       "description": "Service de modernisation rapide de logo incluant design minimaliste, fichiers vectoriels, et garantissant une image professionnelle et durable.",
-      "isAccessibleForFree": "False",
+      "isAccessibleForFree": false,
       "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://www.softriver.co/order-pme" },
       "offers": {
         "@type": "Offer",
@@ -168,6 +168,7 @@
         "description": "Design 100% humain, modernisation rapide et crédibilité immédiate, livraison garantie 48h.",
         "itemOffered": {
           "@type": "Product",
+          "@id": "https://softriver-index.pages.dev/logo-pme#product",
           "name": "Identité Visuelle PME Minimaliste",
           "hasFeature": [
             { "@type": "Thing", "name": "Modernisation de logo" },
@@ -219,14 +220,14 @@
         "author": { "@type": "Person", "name": "Julien M." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "J'étais sceptique sur le design en ligne, mais le logo pour mon cabinet d'avocats est sobre, sérieux et a été livré en 48h. C'est du travail premium.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-pme#service" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-pme#product" }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Sarah D." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "Le relooking de notre logo de garage a été radical. Ça nous a donné un coup de jeune et une crédibilité immédiate auprès de la nouvelle clientèle.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-pme#service" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-pme#product" }
       }
   ]
 }
