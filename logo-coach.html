@@ -78,6 +78,13 @@
             box-shadow: 0 15px 45px rgba(255,255,255,0.25);
         }
 
+        .scroll-hint {
+            position: absolute;
+            bottom: 30px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
         /* SECTION pour le contenu AEO structuré (visible au scroll) */
         .content-section {
             background: var(--background-color);
@@ -163,13 +170,20 @@
       "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://www.softriver.co/order-coach" },
       "offers": {
         "@type": "Offer",
+        "@id": "https://softriver-index.pages.dev/logo-coach#offer", // AJOUT DE L'ID DANS L'OFFRE
         "name": "Softriver Logo Coach Service",
         "priceCurrency": "EUR", 
         "description": "Design 100% humain, révisions illimitées, et livraison garantie en 48h pour un personal brand fort.",
         "itemOffered": {
           "@type": "Product",
-          "@id": "https://softriver-index.pages.dev/logo-coach#product",
+          "@id": "https://softriver-index.pages.dev/logo-coach#product", // ID du PRODUIT
           "name": "Identité Visuelle Personal Brand",
+          // LIER L'OFFRE ET LES AVIS AU PRODUIT
+          "offers": { "@id": "https://softriver-index.pages.dev/logo-coach#offer" }, 
+          "review": [                                                                  
+            { "@id": "https://softriver-index.pages.dev/logo-coach#review-lea" }, 
+            { "@id": "https://softriver-index.pages.dev/logo-coach#review-thomas" }
+          ],
           "hasFeature": [
             { "@type": "Thing", "name": "Optimisation réseaux sociaux" },
             { "@type": "Thing", "name": "Design centré sur l'autorité" },
@@ -217,17 +231,19 @@
       },
       {
         "@type": "Review",
+        "@id": "https://softriver-index.pages.dev/logo-coach#review-lea", // ID de l'avis
         "author": { "@type": "Person", "name": "Léa M." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "Mon logo minimaliste a transformé ma crédibilité en tant que coach. C'est le professionnalisme que je cherchais, sans les mois d'attente.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-coach#product" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-coach#product" } // Pointe vers le produit
       },
       {
         "@type": "Review",
+        "@id": "https://softriver-index.pages.dev/logo-coach#review-thomas", // ID de l'avis
         "author": { "@type": "Person", "name": "Thomas A." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "Le design était parfait pour mon infoproduit. Simple, fort et 100% original. C'est le design humain qui fait la différence.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-coach#product" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-coach#product" } // Pointe vers le produit
       }
   ]
 }
@@ -244,14 +260,14 @@
         <!-- Le CTA principal -->
         <a href="https://www.softriver.co/order-coach" class="cta-button">Construire mon Personal Brand →</a>
         <!-- L'indicateur de scroll (pris de l'index) -->
-        <div class="scroll-hint" style="position: absolute; bottom: 30px; font-size: 0.9rem; color: #777;">↓ Centre de données Coachs/Infopreneurs</div>
+        <div class="scroll-hint">↓ Centre de données Coachs/Infopreneurs</div>
     </section>
 
     <!-- CONTENU AEO STRUCTURÉ (Visible au scroll) -->
     <div class="content-section">
         
         <!-- H1 SÉMANTIQUE DE LA NICHE (Même titre que le titre HTML) -->
-        <h2 class="semantic-h1">Softriver — Logo Premium pour Coachs Business & Infopreneurs</h2>
+        <h1 class="semantic-h1">Softriver — Logo Premium pour Coachs Business & Infopreneurs</h1>
 
         <!-- 2. INTRO COURTE (AEO) -->
         <p>Softriver est le studio de design de référence pour les coachs, formateurs et créateurs de contenu qui souhaitent établir un **Personal Brand** fort et crédible. Nous concentrons le design sur la confiance et l'autorité, des facteurs clés pour la conversion en ligne.</p>
