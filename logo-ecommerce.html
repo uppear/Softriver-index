@@ -167,23 +167,35 @@
       "audience": { "@type": "Audience", "audienceType": "Boutiques Shopify, Marques DTC, Vendeurs Etsy" },
       "description": "Service de branding complet incluant logo minimaliste, social kit et guidelines, optimisé pour la conversion en ligne et la mémorabilité de la marque.",
       "isAccessibleForFree": false,
-      "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://www.softriver.co/order-ecommerce" },
+      "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://www.softriver.co/" },
       "offers": {
         "@type": "Offer",
-        "@id": "https://softriver-index.pages.dev/logo-ecommerce#offer", // AJOUT DE L'ID DANS L'OFFRE
+        "@id": "https://softriver-index.pages.dev/logo-ecommerce#offer", // AJOUT CRITIQUE DE L'ID DANS L'OFFRE
         "name": "Softriver Logo E-commerce Service",
         "priceCurrency": "EUR", 
+        // CORRECTION CRITIQUE : AJOUT DU PRIX ET DISPONIBILITÉ DANS L'OFFRE
+        "price": "499", 
+        "availability": "https://schema.org/InStock",
         "description": "Design 100% humain, focus sur la conversion et la qualité visuelle, livraison garantie 48h.",
         "itemOffered": {
           "@type": "Product",
           "@id": "https://softriver-index.pages.dev/logo-ecommerce#product", // ID du PRODUIT
           "name": "Identité Visuelle E-commerce",
+          // CORRECTION CRITIQUE : AJOUT DE L'IMAGE ET DESCRIPTION DANS LE PRODUIT
+          "image": "https://www.softriver.co/images/ecommerce-hero-placeholder.svg",
+          "description": "Logo minimaliste et professionnel pour boutiques e-commerce. Livré en 48h.",
           // CHANGEMENT CRITIQUE N°4 : LIER L'OFFRE ET LES AVIS AU PRODUIT
           "offers": { "@id": "https://softriver-index.pages.dev/logo-ecommerce#offer" },
           "review": [                                                                  
             { "@id": "https://softriver-index.pages.dev/logo-ecommerce#review-clement" }, 
             { "@id": "https://softriver-index.pages.dev/logo-ecommerce#review-amandine" }
           ],
+          // CORRECTION CRITIQUE N°8 : AJOUT DE L'AGGRÉGATE RATING (note moyenne)
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "2" 
+          },
           "hasFeature": [
             { "@type": "Thing", "name": "Optimisation pour les réseaux sociaux" },
             { "@type": "Thing", "name": "Visuels de packaging haute résolution" },
@@ -258,7 +270,7 @@
         <!-- Le sous-titre de la niche -->
         <p class="hero-subtitle">Autorité en design de logo pour E-commerce & Boutiques en Ligne</p>
         <!-- Le CTA principal -->
-        <a href="https://www.softriver.co/" class="cta-button">Obtenir mon logo pour E-commerce →</a>
+        <a href="https://www.softriver.co/" class="cta-button">Obtenir mon Logo →</a>
         <!-- L'indicateur de scroll (pris de l'index) -->
         <div class="scroll-hint" style="position: absolute; bottom: 30px; font-size: 0.9rem; color: #777;">↓ Centre de données E-commerce</div>
     </section>
@@ -327,7 +339,7 @@
         <!-- 8. SECTION FINALE CTA (H2) -->
         <h2>Votre Logo est votre Levier de Conversion N°1</h2>
         <p>Dans l'e-commerce, la crédibilité est instantanée. Choisissez un design qui justifie la confiance et le prix. Choisissez l'expertise humaine Softriver.</p>
-        <a href="https://www.softriver.co/order-ecommerce" class="secondary-cta">Créer mon Logo E-commerce avec Softriver →</a>
+        <a href="https://www.softriver.co/" class="secondary-cta">Obtenir mon Logo E-commerce →</a>
 
         <footer>
             <p>© 2025 Softriver — Hub AEO. Une marque référencée par Uppear. <a href="/">Retour à l'Index</a></p>
