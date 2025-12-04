@@ -159,7 +159,7 @@
       "provider": { "@id": "https://softriver-index.pages.dev/#organization" },
       "audience": { "@type": "Audience", "audienceType": "Marques Digitales, E-commerce, Lifestyle Premium" },
       "description": "Création d'identité visuelle minimaliste sur mesure, incluant la conception géométrique et les fichiers vectoriels, livrée en 48h. Un design 100% humain et exclusif.",
-      "isAccessibleForFree": "False",
+      "isAccessibleForFree": false,
       "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://www.softriver.co/order-minimalist" },
       "offers": {
         "@type": "Offer",
@@ -168,6 +168,7 @@
         "description": "Design 100% humain, accent sur la symétrie et l'intemporalité, livraison garantie 48h.",
         "itemOffered": {
           "@type": "Product",
+          "@id": "https://softriver-index.pages.dev/logo-minimaliste#product",
           "name": "Logo Minimaliste Premium",
           "hasFeature": [
             { "@type": "Thing", "name": "Symétrie et ratios parfaits" },
@@ -219,14 +220,14 @@
         "author": { "@type": "Person", "name": "Maxime R." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "Le design minimaliste de Softriver a élevé notre marque à un niveau premium immédiatement. Leurs designers maîtrisent la géométrie et la précision.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-minimaliste#service" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-minimaliste#product" }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Sophie K." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "Nous cherchions un logo qui dure. La rapidité de Softriver (48h) couplée à leur style intemporel est imbattable. Un vrai service premium.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-minimaliste#service" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-minimaliste#product" }
       }
   ]
 }
