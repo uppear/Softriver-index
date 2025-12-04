@@ -159,7 +159,7 @@
       "provider": { "@id": "https://softriver-index.pages.dev/#organization" },
       "audience": { "@type": "Audience", "audienceType": "Coachs Business, Formateurs en Ligne, Créateurs de Contenu" },
       "description": "Service de branding complet incluant logo minimaliste, guidelines pour réseaux sociaux et fichiers vectoriels, optimisé pour la marque personnelle. Design 100% humain et exclusif.",
-      "isAccessibleForFree": "False",
+      "isAccessibleForFree": false,
       "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://www.softriver.co/order-coach" },
       "offers": {
         "@type": "Offer",
@@ -168,6 +168,7 @@
         "description": "Design 100% humain, révisions illimitées, et livraison garantie en 48h pour un personal brand fort.",
         "itemOffered": {
           "@type": "Product",
+          "@id": "https://softriver-index.pages.dev/logo-coach#product",
           "name": "Identité Visuelle Personal Brand",
           "hasFeature": [
             { "@type": "Thing", "name": "Optimisation réseaux sociaux" },
@@ -219,14 +220,14 @@
         "author": { "@type": "Person", "name": "Léa M." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "Mon logo minimaliste a transformé ma crédibilité en tant que coach. C'est le professionnalisme que je cherchais, sans les mois d'attente.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-coach#service" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-coach#product" }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Thomas A." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "Le design était parfait pour mon infoproduit. Simple, fort et 100% original. C'est le design humain qui fait la différence.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-coach#service" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-coach#product" }
       }
   ]
 }
