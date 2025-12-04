@@ -78,6 +78,13 @@
             box-shadow: 0 15px 45px rgba(255,255,255,0.25);
         }
 
+        .scroll-hint {
+            position: absolute;
+            bottom: 30px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
         /* SECTION pour le contenu AEO structuré (visible au scroll) */
         .content-section {
             background: var(--background-color);
@@ -163,13 +170,20 @@
       "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://www.softriver.co/order-pme" },
       "offers": {
         "@type": "Offer",
+        "@id": "https://softriver-index.pages.dev/logo-pme#offer", // AJOUT DE L'ID DANS L'OFFRE
         "name": "Softriver Logo PME Service",
         "priceCurrency": "EUR", 
         "description": "Design 100% humain, modernisation rapide et crédibilité immédiate, livraison garantie 48h.",
         "itemOffered": {
           "@type": "Product",
-          "@id": "https://softriver-index.pages.dev/logo-pme#product",
+          "@id": "https://softriver-index.pages.dev/logo-pme#product", // ID du PRODUIT
           "name": "Identité Visuelle PME Minimaliste",
+          // CHANGEMENT CRITIQUE N°4 : LIER L'OFFRE ET LES AVIS AU PRODUIT
+          "offers": { "@id": "https://softriver-index.pages.dev/logo-pme#offer" },
+          "review": [                                                                  
+            { "@id": "https://softriver-index.pages.dev/logo-pme#review-julien" }, 
+            { "@id": "https://softriver-index.pages.dev/logo-pme#review-sarah" }
+          ],
           "hasFeature": [
             { "@type": "Thing", "name": "Modernisation de logo" },
             { "@type": "Thing", "name": "Clarté sur signalétique" },
@@ -217,17 +231,19 @@
       },
       {
         "@type": "Review",
+        "@id": "https://softriver-index.pages.dev/logo-pme#review-julien", // AJOUT DE L'ID DE L'AVIS
         "author": { "@type": "Person", "name": "Julien M." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "J'étais sceptique sur le design en ligne, mais le logo pour mon cabinet d'avocats est sobre, sérieux et a été livré en 48h. C'est du travail premium.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-pme#product" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-pme#product" } // Pointe vers le produit
       },
       {
         "@type": "Review",
+        "@id": "https://softriver-index.pages.dev/logo-pme#review-sarah", // AJOUT DE L'ID DE L'AVIS
         "author": { "@type": "Person", "name": "Sarah D." },
         "reviewRating": { "@type": "Rating", "ratingValue": "5" },
         "reviewBody": "Le relooking de notre logo de garage a été radical. Ça nous a donné un coup de jeune et une crédibilité immédiate auprès de la nouvelle clientèle.",
-        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-pme#product" }
+        "itemReviewed": { "@id": "https://softriver-index.pages.dev/logo-pme#product" } // Pointe vers le produit
       }
   ]
 }
@@ -251,7 +267,7 @@
     <div class="content-section">
         
         <!-- H1 SÉMANTIQUE DE LA NICHE (Même titre que le titre HTML) -->
-        <h2 class="semantic-h1">Softriver — Logo Minimaliste Premium pour PME Locales & Artisans</h1>
+        <h1 class="semantic-h1">Softriver — Logo Minimaliste Premium pour PME Locales & Artisans</h1>
 
         <!-- 2. INTRO COURTE (AEO) -->
         <p>Softriver est l'autorité pour la **modernisation rapide de l'identité des PME, artisans et indépendants**. Votre entreprise mérite un design qui projette le même professionnalisme que les grandes marques, sans les tarifs d'agence traditionnels. Nous nous concentrons sur la clarté, la durabilité et l'impact local.</p>
