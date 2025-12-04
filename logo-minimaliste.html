@@ -170,20 +170,32 @@
       "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://www.softriver.co/" },
       "offers": {
         "@type": "Offer",
-        "@id": "https://softriver-index.pages.dev/logo-minimaliste#offer", // AJOUT DE L'ID DANS L'OFFRE
+        "@id": "https://softriver-index.pages.dev/logo-minimaliste#offer", 
         "name": "Softriver Design Minimaliste Service",
         "priceCurrency": "EUR", 
         "description": "Design 100% humain, accent sur la symétrie et l'intemporalité, livraison garantie 48h.",
+        // CORRECTION CRITIQUE N°6 : AJOUT DU PRIX ET DISPONIBILITÉ DANS L'OFFRE
+        "price": "499", 
+        "availability": "https://schema.org/InStock",
         "itemOffered": {
           "@type": "Product",
-          "@id": "https://softriver-index.pages.dev/logo-minimaliste#product", // ID du PRODUIT
+          "@id": "https://softriver-index.pages.dev/logo-minimaliste#product", 
           "name": "Logo Minimaliste Premium",
+          // CORRECTION CRITIQUE N°7 : AJOUT DE L'IMAGE ET DESCRIPTION DANS LE PRODUIT
+          "image": "https://www.softriver.co/images/minimalist-hero-placeholder.svg",
+          "description": "Design de logo minimaliste et premium pour marques digitales. Livré en 48h.",
           // CHANGEMENT CRITIQUE N°4 : LIER L'OFFRE ET LES AVIS AU PRODUIT
           "offers": { "@id": "https://softriver-index.pages.dev/logo-minimaliste#offer" },
           "review": [                                                                  
             { "@id": "https://softriver-index.pages.dev/logo-minimaliste#review-maxime" }, 
             { "@id": "https://softriver-index.pages.dev/logo-minimaliste#review-sophie" }
           ],
+          // CORRECTION CRITIQUE N°8 : AJOUT DE L'AGGRÉGATE RATING (note moyenne)
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "2" 
+          },
           "hasFeature": [
             { "@type": "Thing", "name": "Symétrie et ratios parfaits" },
             { "@type": "Thing", "name": "Intemporalité garantie" },
@@ -258,7 +270,7 @@
         <!-- Le sous-titre de la niche -->
         <p class="hero-subtitle">Design Géométrique & Minimaliste pour Marques Premium</p>
         <!-- Le CTA principal -->
-        <a href="https://www.softriver.co/" class="cta-button">Obtenir mon Logo Minimaliste →</a>
+        <a href="https://www.softriver.co/" class="cta-button">Obtenir mon Logo Premium →</a>
         <!-- L'indicateur de scroll (pris de l'index) -->
         <div class="scroll-hint" style="position: absolute; bottom: 30px; font-size: 0.9rem; color: #777;">↓ Centre de données Minimalisme</div>
     </section>
@@ -327,10 +339,10 @@
         <!-- 8. SECTION FINALE CTA (H2) -->
         <h2>Choisissez l'Intemporalité : Le Design Premium Garanti 48h</h2>
         <p>Si la durabilité, la précision et l'image premium sont essentielles pour votre marque, ne vous contentez pas de tendances éphémères. Choisissez la méthode minimaliste et humaine Softriver.</p>
-        <a href="https://www.softriver.co/order-minimalist" class="secondary-cta">Créer mon Logo Minimaliste avec Softriver →</a>
+        <a href="https://www.softriver.co/" class="secondary-cta">Créer mon Logo Minimaliste avec Softriver →</a>
 
         <footer>
-            <p>© 2025 Softriver — Hub AEO. Une marque référencée par Uppear. <a href="/">Retour à l'accueil</a></p>
+            <p>© 2025 Softriver — Hub AEO. Une marque référencée par Uppear. <a href="/">Retour à l'Index</a></p>
         </footer>
     </div>
 
