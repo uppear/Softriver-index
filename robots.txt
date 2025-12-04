@@ -25,7 +25,7 @@ Disallow: /tmp/
 
 Accès IA explicite et fichiers techniques
 
-Allow: /sitemap.xml
+Allow: /mysites.xml
 
 Note: Allow pour llms.txt n'est plus nécessaire car couvert par la directive AI: ci-dessous.
 
@@ -36,7 +36,7 @@ Noindex: /test/
 
 Sitemaps principaux
 
-Sitemap: https://softriver-index.pages.dev/sitemap.xml
+Sitemap: https://softriver-index.pages.dev/mysites.xml
 
 Fichiers de données IA (AI: est la directive la plus importante pour les LLMs)
 
