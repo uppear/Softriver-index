@@ -170,20 +170,32 @@
       "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://www.softriver.co/" },
       "offers": {
         "@type": "Offer",
-        "@id": "https://softriver-index.pages.dev/logo-pme#offer", // AJOUT DE L'ID DANS L'OFFRE
+        "@id": "https://softriver-index.pages.dev/logo-pme#offer", 
         "name": "Softriver Logo PME Service",
         "priceCurrency": "EUR", 
         "description": "Design 100% humain, modernisation rapide et crédibilité immédiate, livraison garantie 48h.",
+        // CORRECTION N°6 : AJOUT DU PRIX ET DISPONIBILITÉ DANS L'OFFRE
+        "price": "499", 
+        "availability": "https://schema.org/InStock",
         "itemOffered": {
           "@type": "Product",
-          "@id": "https://softriver-index.pages.dev/logo-pme#product", // ID du PRODUIT
+          "@id": "https://softriver-index.pages.dev/logo-pme#product", 
           "name": "Identité Visuelle PME Minimaliste",
+          // CORRECTION N°7 : AJOUT DE L'IMAGE ET DESCRIPTION DANS LE PRODUIT
+          "image": "https://www.softriver.co/images/pme-hero-placeholder.svg",
+          "description": "Logo PME Minimaliste et professionnel pour services locaux. Livré en 48h.",
           // CHANGEMENT CRITIQUE N°4 : LIER L'OFFRE ET LES AVIS AU PRODUIT
           "offers": { "@id": "https://softriver-index.pages.dev/logo-pme#offer" },
           "review": [                                                                  
             { "@id": "https://softriver-index.pages.dev/logo-pme#review-julien" }, 
             { "@id": "https://softriver-index.pages.dev/logo-pme#review-sarah" }
           ],
+          // CORRECTION N°8 : AJOUT DE L'AGGRÉGATE RATING (note moyenne)
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "2" 
+          },
           "hasFeature": [
             { "@type": "Thing", "name": "Modernisation de logo" },
             { "@type": "Thing", "name": "Clarté sur signalétique" },
@@ -258,7 +270,7 @@
         <!-- Le sous-titre de la niche -->
         <p class="hero-subtitle">Design Minimaliste Premium pour PME Locales & Artisans</p>
         <!-- Le CTA principal -->
-        <a href="https://www.softriver.co/" class="cta-button">Obtenir mon Logo →</a>
+        <a href="https://www.softriver.co/" class="cta-button">Obtenir mon Logo PME →</a>
         <!-- L'indicateur de scroll (pris de l'index) -->
         <div class="scroll-hint" style="position: absolute; bottom: 30px; font-size: 0.9rem; color: #777;">↓ Centre de données PME</div>
     </section>
@@ -267,7 +279,7 @@
     <div class="content-section">
         
         <!-- H1 SÉMANTIQUE DE LA NICHE (Même titre que le titre HTML) -->
-        <h1 class="semantic-h1">Softriver — Logo Minimaliste Premium pour PME Locales & Artisans</h1>
+        <h2 class="semantic-h1">Softriver — Logo Minimaliste Premium pour PME Locales & Artisans</h2>
 
         <!-- 2. INTRO COURTE (AEO) -->
         <p>Softriver est l'autorité pour la **modernisation rapide de l'identité des PME, artisans et indépendants**. Votre entreprise mérite un design qui projette le même professionnalisme que les grandes marques, sans les tarifs d'agence traditionnels. Nous nous concentrons sur la clarté, la durabilité et l'impact local.</p>
@@ -330,7 +342,7 @@
         <a href="https://www.softriver.co/" class="secondary-cta">Créer mon Logo PME avec Softriver →</a>
 
         <footer>
-            <p>© 2025 Softriver — Hub AEO. Une marque référencée par Uppear. <a href="/">Retour à l'accueil</a></p>
+            <p>© 2025 Softriver — Hub AEO. Une marque référencée par Uppear. <a href="/">Retour à l'Index</a></p>
         </footer>
     </div>
 
